@@ -1,0 +1,430 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for App.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="index.html">All files</a> App.tsx</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/108</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/108</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import { useEffect, useMemo, useState } from "react";</span></span></span>
+import type { ReactNode, FormEvent } from "react";
+<span class="cstat-no" title="statement not covered" >import { memo } from "react";</span>
+<span class="cstat-no" title="statement not covered" >import { NavLink, Routes, Route, useLocation } from "react-router-dom";</span>
+<span class="cstat-no" title="statement not covered" >import { Activity, AlertCircle, ArrowDownRight, ArrowUpRight, Bell, Boxes, BriefcaseBusiness, CalendarDays, Check, CheckCircle2, ChevronDown, CircleHelp, ClipboardList, Command, Factory, FilePlus2, LayoutDashboard, Menu, MoreHorizontal, Plus, Search, Settings, ShieldCheck, SlidersHorizontal, Sparkles, Users, X, PlugZap } from "lucide-react";</span>
+<span class="cstat-no" title="statement not covered" >import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";</span>
+<span class="cstat-no" title="statement not covered" >import { activity, chartData, initialProjects, initialTasks } from "./data";</span>
+import type { FormField, Project, Task } from "./types";
+<span class="cstat-no" title="statement not covered" >import { validateSchema, validateValues } from "./validation";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >const nav = [</span>
+<span class="cstat-no" title="statement not covered" >  { label: "Overview", path: "/", icon: LayoutDashboard },</span>
+<span class="cstat-no" title="statement not covered" >  { label: "Projects", path: "/projects", icon: BriefcaseBusiness },</span>
+<span class="cstat-no" title="statement not covered" >  { label: "Tasks", path: "/tasks", icon: ClipboardList },</span>
+<span class="cstat-no" title="statement not covered" >  { label: "Dynamic Forms", path: "/forms", icon: FilePlus2 },</span>
+<span class="cstat-no" title="statement not covered" >  { label: "API Integration", path: "/api-demo", icon: PlugZap },</span>
+<span class="cstat-no" title="statement not covered" >];</span>
+<span class="cstat-no" title="statement not covered" >const initialSchema: FormField[] = [</span>
+<span class="cstat-no" title="statement not covered" >  { name: "requestTitle", label: "Request title", type: "text", required: true },</span>
+<span class="cstat-no" title="statement not covered" >  { name: "department", label: "Department", type: "select", required: true, options: ["Production", "Warehouse", "Maintenance", "Power Operations"] },</span>
+<span class="cstat-no" title="statement not covered" >  { name: "requestDate", label: "Requested date", type: "date", required: true },</span>
+<span class="cstat-no" title="statement not covered" >  { name: "details", label: "Additional details", type: "textarea" },</span>
+<span class="cstat-no" title="statement not covered" >  { name: "impact", label: "Estimated impact (hours)", type: "number", min: 0, max: 100, required: true },</span>
+<span class="cstat-no" title="statement not covered" >  { name: "urgent", label: "Urgent request", type: "checkbox" }</span>
+<span class="cstat-no" title="statement not covered" >];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >function App() {</span>
+<span class="cstat-no" title="statement not covered" >  const [collapsed, setCollapsed] = useState(false);</span>
+<span class="cstat-no" title="statement not covered" >  const [tasks, setTasks] = useState&lt;Task[]&gt;(() =&gt; JSON.parse(localStorage.getItem("opspilot-tasks") || "null") || initialTasks);</span>
+<span class="cstat-no" title="statement not covered" >  const [projects] = useState&lt;Project[]&gt;(initialProjects);</span>
+<span class="cstat-no" title="statement not covered" >  const [query, setQuery] = useState("");</span>
+<span class="cstat-no" title="statement not covered" >  const [showTaskModal, setShowTaskModal] = useState(false);</span>
+<span class="cstat-no" title="statement not covered" >  const [toast, setToast] = useState("");</span>
+<span class="cstat-no" title="statement not covered" >  const location = useLocation();</span>
+<span class="cstat-no" title="statement not covered" >  const pageTitle = nav.find(n =&gt; n.path === location.pathname)?.label || "Overview";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  const updateTasks = (next: Task[]) =&gt; { setTasks(next); localStorage.setItem("opspilot-tasks", JSON.stringify(next)); };</span>
+<span class="cstat-no" title="statement not covered" >  const notify = (message: string) =&gt; { setToast(message); window.setTimeout(() =&gt; setToast(""), 2600); };</span>
+<span class="cstat-no" title="statement not covered" >  const filteredTasks = useMemo(() =&gt; tasks.filter(t =&gt; `${t.title} ${t.department} ${t.owner}`.toLowerCase().includes(query.toLowerCase())), [tasks, query]);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return &lt;div className="app-shell"&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;aside className={`sidebar ${collapsed ? "collapsed" : ""}`}&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;div className="brand"&gt;&lt;div className="brand-mark"&gt;&lt;Command size={20}/&gt;&lt;/div&gt;{!collapsed &amp;&amp; &lt;div&gt;&lt;strong&gt;opspilot&lt;/strong&gt;&lt;span&gt;OPERATIONS CLOUD&lt;/span&gt;&lt;/div&gt;}&lt;button className="icon-btn collapse-btn" onClick={() =&gt; setCollapsed(!collapsed)}&gt;&lt;Menu size={18}/&gt;&lt;/button&gt;&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;div className="workspace"&gt;&lt;div className="workspace-icon"&gt;&lt;Factory size={18}/&gt;&lt;/div&gt;{!collapsed &amp;&amp; &lt;div className="workspace-text"&gt;&lt;b&gt;Northstar Industries&lt;/b&gt;&lt;span&gt;Enterprise workspace&lt;/span&gt;&lt;/div&gt;}&lt;ChevronDown size={15}/&gt;&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;div className="nav-label"&gt;{!collapsed &amp;&amp; "WORKSPACE"}&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;nav&gt;{nav.map(item =&gt; &lt;NavLink key={item.path} to={item.path} end={item.path === "/"} title={item.label} className={({isActive}) =&gt; `nav-item ${isActive ? "active" : ""}`}&gt;&lt;item.icon size={18}/&gt;{!collapsed &amp;&amp; &lt;span&gt;{item.label}&lt;/span&gt;}{item.label === "Tasks" &amp;&amp; !collapsed &amp;&amp; &lt;small&gt;{tasks.filter(t=&gt;t.status!=="Completed").length}&lt;/small&gt;}&lt;/NavLink&gt;)}&lt;/nav&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;div className="nav-label lower"&gt;{!collapsed &amp;&amp; "MANAGE"}&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;nav&gt;&lt;button className="nav-item" onClick={() =&gt; notify("Team directory is a demo module.")}&gt;&lt;Users size={18}/&gt;{!collapsed &amp;&amp; "Team directory"}&lt;/button&gt;&lt;button className="nav-item" onClick={() =&gt; notify("Settings are available in the demo build.")}&gt;&lt;Settings size={18}/&gt;{!collapsed &amp;&amp; "Settings"}&lt;/button&gt;&lt;/nav&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;div className="sidebar-bottom"&gt;&lt;div className="help-card"&gt;&lt;CircleHelp size={18}/&gt;{!collapsed &amp;&amp; &lt;span&gt;&lt;b&gt;Need a hand?&lt;/b&gt;&lt;small&gt;Visit the help center&lt;/small&gt;&lt;/span&gt;}&lt;/div&gt;&lt;div className="profile"&gt;&lt;div className="avatar"&gt;FM&lt;/div&gt;{!collapsed &amp;&amp; &lt;div&gt;&lt;b&gt;Fatemeh Madihi&lt;/b&gt;&lt;span&gt;Frontend workspace&lt;/span&gt;&lt;/div&gt;}&lt;MoreHorizontal size={18}/&gt;&lt;/div&gt;&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/aside&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;main className="main-area"&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;header className="topbar"&gt;&lt;div className="breadcrumbs"&gt;&lt;span&gt;Workspace&lt;/span&gt;&lt;b&gt;/&lt;/b&gt;&lt;strong&gt;{pageTitle}&lt;/strong&gt;&lt;/div&gt;&lt;div className="top-actions"&gt;&lt;div className="searchbox"&gt;&lt;Search size={16}/&gt;&lt;input value={query} onChange={e=&gt;setQuery(e.target.value)} placeholder="Search tasks, projects..."/&gt;&lt;kbd&gt;⌘ K&lt;/kbd&gt;&lt;/div&gt;&lt;button className="icon-btn notification" onClick={()=&gt;notify("You're all caught up.")}&gt;&lt;Bell size={18}/&gt;&lt;i/&gt;&lt;/button&gt;&lt;div className="top-avatar"&gt;FM&lt;/div&gt;&lt;/div&gt;&lt;/header&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;div className="page-content"&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;Routes&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;Route path="/" element={&lt;Dashboard projects={projects} tasks={tasks} onNewTask={()=&gt;setShowTaskModal(true)} onNavigate={(p)=&gt;window.history.pushState({}, "", p)}/&gt;}/&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;Route path="/projects" element={&lt;Projects projects={projects}/&gt;}/&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;Route path="/tasks" element={&lt;Tasks tasks={filteredTasks} onStatus={(id,status)=&gt;updateTasks(tasks.map(t=&gt;t.id===id?{...t,status}:t))} onNew={()=&gt;setShowTaskModal(true)} query={query}/&gt;}/&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;Route path="/forms" element={&lt;Forms schema={initialSchema} onNotify={notify}/&gt;}/&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;Route path="/api-demo" element={&lt;ApiConsole onNotify={notify}/&gt;}/&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;/Routes&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/main&gt;</span>
+<span class="cstat-no" title="statement not covered" >    {showTaskModal &amp;&amp; &lt;TaskModal onClose={()=&gt;setShowTaskModal(false)} onSave={task=&gt;{updateTasks([{...task,id:Date.now()},...tasks]);setShowTaskModal(false);notify("Task created successfully.");}}/&gt;}</span>
+<span class="cstat-no" title="statement not covered" >    {toast &amp;&amp; &lt;div className="toast"&gt;&lt;CheckCircle2 size={17}/&gt;{toast}&lt;/div&gt;}</span>
+<span class="cstat-no" title="statement not covered" >  &lt;/div&gt;;</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >function PageHeading({eyebrow,title,description,action}:{eyebrow:string;title:string;description:string;action?:ReactNode}) {</span>
+<span class="cstat-no" title="statement not covered" >  return &lt;div className="page-heading"&gt;&lt;div&gt;&lt;div className="eyebrow"&gt;{eyebrow}&lt;/div&gt;&lt;h1&gt;{title}&lt;/h1&gt;&lt;p&gt;{description}&lt;/p&gt;&lt;/div&gt;{action}&lt;/div&gt;;</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" >function Dashboard({projects,tasks,onNewTask}:{projects:Project[];tasks:Task[];onNewTask:()=&gt;void;onNavigate:(p:string)=&gt;void}) {</span>
+<span class="cstat-no" title="statement not covered" >  const done = tasks.filter(t=&gt;t.status==="Completed").length;</span>
+<span class="cstat-no" title="statement not covered" >  return &lt;&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;PageHeading eyebrow="THURSDAY, NOVEMBER 19, 2026" title="Good morning, Fatemeh" description="Here’s what’s happening across your operations today." action={&lt;button className="primary-btn" onClick={onNewTask}&gt;&lt;Plus size={17}/&gt; Create task&lt;/button&gt;}/&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div className="insight-banner"&gt;&lt;div className="insight-icon"&gt;&lt;Sparkles size={19}/&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Operations are looking healthy&lt;/b&gt;&lt;p&gt;3 projects are on track. One warehouse milestone needs your attention this week.&lt;/p&gt;&lt;/div&gt;&lt;button onClick={()=&gt;document.getElementById("projects-section")?.scrollIntoView({behavior:"smooth"})}&gt;View insights &lt;ArrowUpRight size={15}/&gt;&lt;/button&gt;&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div className="kpi-grid"&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Kpi title="Active projects" value="12" change="+2 this month" icon={&lt;BriefcaseBusiness/&gt;} tone="violet" trend="up"/&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Kpi title="Tasks completed" value={`${done+24}`} change="+12.8% vs last week" icon={&lt;CheckCircle2/&gt;} tone="cyan" trend="up"/&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Kpi title="Team capacity" value="84%" change="6% above target" icon={&lt;Users/&gt;} tone="blue" trend="up"/&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Kpi title="Open issues" value="07" change="2 require attention" icon={&lt;AlertCircle/&gt;} tone="orange" trend="down"/&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div className="dashboard-grid"&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;section className="panel performance-panel"&gt;&lt;div className="panel-head"&gt;&lt;div&gt;&lt;h2&gt;Operational performance&lt;/h2&gt;&lt;p&gt;Planned vs. actual completion rate&lt;/p&gt;&lt;/div&gt;&lt;button className="select-btn"&gt;This week &lt;ChevronDown size={14}/&gt;&lt;/button&gt;&lt;/div&gt;&lt;div className="chart-legend"&gt;&lt;span&gt;&lt;i className="legend-violet"/&gt;Actual&lt;/span&gt;&lt;span&gt;&lt;i className="legend-muted"/&gt;Planned&lt;/span&gt;&lt;/div&gt;&lt;div className="chart-wrap"&gt;&lt;ResponsiveContainer width="100%" height="100%"&gt;&lt;AreaChart data={chartData} margin={{top:12,right:8,left:-22,bottom:0}}&gt;&lt;defs&gt;&lt;linearGradient id="actual" x1="0" y1="0" x2="0" y2="1"&gt;&lt;stop offset="0%" stopColor="#8b7cff" stopOpacity={0.3}/&gt;&lt;stop offset="100%" stopColor="#8b7cff" stopOpacity={0}/&gt;&lt;/linearGradient&gt;&lt;linearGradient id="planned" x1="0" y1="0" x2="0" y2="1"&gt;&lt;stop offset="0%" stopColor="#3bbfc5" stopOpacity={0.14}/&gt;&lt;stop offset="100%" stopColor="#3bbfc5" stopOpacity={0}/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;CartesianGrid stroke="#252a3c" vertical={false}/&gt;&lt;XAxis dataKey="day" axisLine={false} tickLine={false} tick={{fill:"#81879b",fontSize:11}} dy={10}/&gt;&lt;YAxis axisLine={false} tickLine={false} tick={{fill:"#81879b",fontSize:11}} tickFormatter={v=&gt;`${v}%`}/&gt;&lt;Tooltip contentStyle={{background:"#191e30",border:"1px solid #30364b",borderRadius:10,color:"#fff"}}/&gt;&lt;Area type="monotone" dataKey="planned" stroke="#43b9bd" strokeDasharray="5 5" fill="url(#planned)" strokeWidth={2}/&gt;&lt;Area type="monotone" dataKey="actual" stroke="#9485ff" fill="url(#actual)" strokeWidth={2.5}/&gt;&lt;/AreaChart&gt;&lt;/ResponsiveContainer&gt;&lt;/div&gt;&lt;/section&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;section className="panel activity-panel"&gt;&lt;div className="panel-head"&gt;&lt;div&gt;&lt;h2&gt;Recent activity&lt;/h2&gt;&lt;p&gt;Latest updates from your team&lt;/p&gt;&lt;/div&gt;&lt;button className="more-btn"&gt;&lt;MoreHorizontal/&gt;&lt;/button&gt;&lt;/div&gt;&lt;div className="activity-list"&gt;{activity.map(a=&gt;&lt;div className="activity-item" key={a.initials}&gt;&lt;div className={`activity-avatar ${a.tone}`}&gt;{a.initials}&lt;/div&gt;&lt;div&gt;&lt;p&gt;&lt;b&gt;{a.name}&lt;/b&gt; {a.action}&lt;/p&gt;&lt;small&gt;{a.time}&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;)}&lt;/div&gt;&lt;button className="text-btn"&gt;View activity log &lt;ArrowUpRight size={14}/&gt;&lt;/button&gt;&lt;/section&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;section className="panel projects-panel" id="projects-section"&gt;&lt;div className="panel-head"&gt;&lt;div&gt;&lt;h2&gt;Project progress&lt;/h2&gt;&lt;p&gt;Track milestones across departments&lt;/p&gt;&lt;/div&gt;&lt;NavLink to="/projects" className="text-btn"&gt;All projects &lt;ArrowUpRight size={14}/&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;div className="project-table"&gt;&lt;div className="table-row table-header"&gt;&lt;span&gt;PROJECT&lt;/span&gt;&lt;span&gt;DEPARTMENT&lt;/span&gt;&lt;span&gt;PROGRESS&lt;/span&gt;&lt;span&gt;STATUS&lt;/span&gt;&lt;span&gt;DUE DATE&lt;/span&gt;&lt;/div&gt;{projects.slice(0,3).map(p=&gt;&lt;div className="table-row" key={p.id}&gt;&lt;div className="project-name"&gt;&lt;i className={`project-dot ${p.color}`}/&gt;&lt;b&gt;{p.name}&lt;/b&gt;&lt;/div&gt;&lt;span&gt;{p.department}&lt;/span&gt;&lt;div className="progress-cell"&gt;&lt;div className="progress-track"&gt;&lt;i style={{width:`${p.progress}%`}}/&gt;&lt;/div&gt;&lt;small&gt;{p.progress}%&lt;/small&gt;&lt;/div&gt;&lt;span&gt;&lt;em className={`status-pill ${p.status==="At risk"?"risk":"good"}`}&gt;{p.status}&lt;/em&gt;&lt;/span&gt;&lt;span&gt;{p.due}&lt;/span&gt;&lt;/div&gt;)}&lt;/div&gt;&lt;/section&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div className="bottom-grid"&gt;&lt;section className="panel tasks-panel"&gt;&lt;div className="panel-head"&gt;&lt;div&gt;&lt;h2&gt;Priority tasks&lt;/h2&gt;&lt;p&gt;Stay on top of important work&lt;/p&gt;&lt;/div&gt;&lt;NavLink to="/tasks" className="text-btn"&gt;View all&lt;/NavLink&gt;&lt;/div&gt;{tasks.slice(0,4).map(t=&gt;&lt;div className="task-line" key={t.id}&gt;&lt;div className={`task-check ${t.status==="Completed"?"checked":""}`}&gt;{t.status==="Completed"&amp;&amp;&lt;Check size={13}/&gt;}&lt;/div&gt;&lt;div className="task-copy"&gt;&lt;b&gt;{t.title}&lt;/b&gt;&lt;small&gt;{t.department} · {t.owner}&lt;/small&gt;&lt;/div&gt;&lt;em className={`priority ${t.priority.toLowerCase()}`}&gt;{t.priority}&lt;/em&gt;&lt;/div&gt;)}&lt;/section&gt;&lt;section className="panel capacity-panel"&gt;&lt;div className="panel-head"&gt;&lt;div&gt;&lt;h2&gt;Team capacity&lt;/h2&gt;&lt;p&gt;Resource utilization&lt;/p&gt;&lt;/div&gt;&lt;span className="capacity-value"&gt;84%&lt;/span&gt;&lt;/div&gt;&lt;div className="capacity-ring"&gt;&lt;div&gt;&lt;strong&gt;84%&lt;/strong&gt;&lt;small&gt;utilized&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;&lt;div className="capacity-foot"&gt;&lt;span&gt;&lt;i className="legend-violet"/&gt;Current workload&lt;/span&gt;&lt;span&gt;&lt;i className="legend-muted"/&gt;Available&lt;/span&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >  &lt;/&gt;;</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" >const Kpi = memo(function Kpi({title,value,change,icon,tone,trend}:{title:string;value:string;change:string;icon:ReactNode;tone:string;trend:string}) {return &lt;div className="kpi-card"&gt;&lt;div className="kpi-top"&gt;&lt;span&gt;{title}&lt;/span&gt;&lt;i className={`kpi-icon ${tone}`}&gt;{icon}&lt;/i&gt;&lt;/div&gt;&lt;strong&gt;{value}&lt;/strong&gt;&lt;div className="kpi-change"&gt;{trend==="up"?&lt;ArrowUpRight size={14}/&gt;:&lt;ArrowDownRight size={14}/&gt;} {change}&lt;/div&gt;&lt;/div&gt;});</span>
+<span class="cstat-no" title="statement not covered" >function Projects({projects}:{projects:Project[]}) {return &lt;&gt;&lt;PageHeading eyebrow="WORKSPACE / DELIVERY" title="Projects" description="Monitor project health, ownership, and delivery milestones." action={&lt;button className="primary-btn"&gt;&lt;Plus size={17}/&gt; New project&lt;/button&gt;}/&gt;&lt;div className="project-cards"&gt;{projects.map(p=&gt;&lt;div className="panel project-card" key={p.id}&gt;&lt;div className="project-card-top"&gt;&lt;i className={`project-dot ${p.color}`}/&gt;&lt;span className={`status-pill ${p.status==="At risk"?"risk":"good"}`}&gt;{p.status}&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;{p.name}&lt;/h3&gt;&lt;p&gt;{p.department} department&lt;/p&gt;&lt;div className="project-progress-label"&gt;&lt;span&gt;Completion&lt;/span&gt;&lt;b&gt;{p.progress}%&lt;/b&gt;&lt;/div&gt;&lt;div className="progress-track"&gt;&lt;i style={{width:`${p.progress}%`}}/&gt;&lt;/div&gt;&lt;div className="project-card-foot"&gt;&lt;span&gt;&lt;CalendarDays size={14}/&gt; Due {p.due}&lt;/span&gt;&lt;span className="avatar-stack"&gt;&lt;i&gt;FM&lt;/i&gt;&lt;i&gt;+3&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;)}&lt;/div&gt;&lt;/&gt;}</span>
+<span class="cstat-no" title="statement not covered" >function Tasks({tasks,onStatus,onNew,query}:{tasks:Task[];onStatus:(id:number,status:Task["status"])=&gt;void;onNew:()=&gt;void;query:string}) {const [filter,setFilter]=useState("All");const shown=tasks.filter(t=&gt;filter==="All"||t.status===filter);return &lt;&gt;&lt;PageHeading eyebrow="WORKSPACE / EXECUTION" title="Tasks" description="A clear view of work in progress across every department." action={&lt;button className="primary-btn" onClick={onNew}&gt;&lt;Plus size={17}/&gt; Create task&lt;/button&gt;}/&gt;&lt;section className="panel tasks-page"&gt;&lt;div className="filter-row"&gt;&lt;div className="filter-tabs"&gt;{["All","In progress","Review","Completed"].map(f=&gt;&lt;button className={filter===f?"selected":""} onClick={()=&gt;setFilter(f)} key={f}&gt;{f}&lt;/button&gt;)}&lt;/div&gt;&lt;span className="result-count"&gt;{shown.length} tasks {query&amp;&amp;`matching “${query}”`}&lt;/span&gt;&lt;/div&gt;&lt;div className="project-table"&gt;&lt;div className="table-row task-table-header"&gt;&lt;span&gt;TASK&lt;/span&gt;&lt;span&gt;DEPARTMENT&lt;/span&gt;&lt;span&gt;OWNER&lt;/span&gt;&lt;span&gt;PRIORITY&lt;/span&gt;&lt;span&gt;STATUS&lt;/span&gt;&lt;/div&gt;{shown.map(t=&gt;&lt;div className="table-row task-table-row" key={t.id}&gt;&lt;div className="task-title-cell"&gt;&lt;b&gt;{t.title}&lt;/b&gt;&lt;small&gt;Due {t.due}&lt;/small&gt;&lt;/div&gt;&lt;span&gt;{t.department}&lt;/span&gt;&lt;span&gt;{t.owner}&lt;/span&gt;&lt;span&gt;&lt;em className={`priority ${t.priority.toLowerCase()}`}&gt;{t.priority}&lt;/em&gt;&lt;/span&gt;&lt;select value={t.status} onChange={e=&gt;onStatus(t.id,e.target.value as Task["status"])}&gt;&lt;option&gt;In progress&lt;/option&gt;&lt;option&gt;Review&lt;/option&gt;&lt;option&gt;Completed&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;)}&lt;/div&gt;{shown.length===0&amp;&amp;&lt;div className="empty-state"&gt;No tasks found. Try another search or filter.&lt;/div&gt;}&lt;/section&gt;&lt;/&gt;}</span>
+<span class="cstat-no" title="statement not covered" >function Forms({schema,onNotify}:{schema:FormField[];onNotify:(m:string)=&gt;void}) {const [values,setValues]=useState&lt;Record&lt;string,string&gt;&gt;({});const [submitted,setSubmitted]=useState(false);const [showJson,setShowJson]=useState(false);const [validationErrors,setValidationErrors]=useState&lt;Record&lt;string,string&gt;&gt;({});const schemaErrors=validateSchema(schema);return &lt;&gt;&lt;PageHeading eyebrow="WORKSPACE / CONFIGURATION" title="Dynamic Form Builder" description="A schema-driven form experience generated from JSON configuration." action={&lt;button className="secondary-btn" onClick={()=&gt;setShowJson(!showJson)}&gt;&lt;Command size={16}/&gt; {showJson?"Hide":"View"} JSON schema&lt;/button&gt;}/&gt;&lt;div className="form-layout"&gt;&lt;section className="panel form-preview"&gt;&lt;div className="panel-head"&gt;&lt;div&gt;&lt;h2&gt;Maintenance request&lt;/h2&gt;&lt;p&gt;Generated dynamically from the form schema&lt;/p&gt;&lt;/div&gt;&lt;span className="schema-badge"&gt;&lt;Sparkles size={13}/&gt; JSON-driven&lt;/span&gt;&lt;/div&gt;{submitted?&lt;div className="success-state"&gt;&lt;div&gt;&lt;CheckCircle2 size={30}/&gt;&lt;/div&gt;&lt;h3&gt;Request submitted&lt;/h3&gt;&lt;p&gt;Your demo request has been saved in this session.&lt;/p&gt;&lt;button className="secondary-btn" onClick={()=&gt;{setSubmitted(false);setValues({});}}&gt;Create another request&lt;/button&gt;&lt;/div&gt;:&lt;form onSubmit={e=&gt;{e.preventDefault();const errors=validateValues(schema,values);setValidationErrors(errors);if(Object.keys(errors).length===0&amp;&amp;schemaErrors.length===0){setSubmitted(true);onNotify("Form submitted successfully.");}}} className="dynamic-form"&gt;{schema.map(field=&gt;&lt;label className="field" key={field.name}&gt;&lt;span&gt;{field.label}{field.required&amp;&amp;&lt;i&gt;*&lt;/i&gt;}&lt;/span&gt;{field.type==="textarea"?&lt;textarea required={field.required} value={values[field.name]||""} onChange={e=&gt;setValues({...values,[field.name]:e.target.value})} placeholder="Add context or details..."/&gt;:field.type==="select"?&lt;select required={field.required} value={values[field.name]||""} onChange={e=&gt;setValues({...values,[field.name]:e.target.value})}&gt;&lt;option value=""&gt;Select a department&lt;/option&gt;{field.options?.map(o=&gt;&lt;option key={o}&gt;{o}&lt;/option&gt;)}&lt;/select&gt;:field.type==="checkbox"?&lt;input type="checkbox" checked={values[field.name]==="true"} onChange={e=&gt;setValues({...values,[field.name]:String(e.target.checked)})}/&gt;:&lt;input required={field.required} min={field.min} max={field.max} type={field.type} value={values[field.name]||""} onChange={e=&gt;setValues({...values,[field.name]:e.target.value})} placeholder={field.type==="date"?"":"Enter "+field.label.toLowerCase()}/&gt;}{validationErrors[field.name]&amp;&amp;&lt;small className="api-error" role="alert"&gt;{validationErrors[field.name]}&lt;/small&gt;}&lt;/label&gt;)}{schemaErrors.length&gt;0&amp;&amp;&lt;p className="api-error"&gt;{schemaErrors.join(" ")}&lt;/p&gt;}&lt;div className="form-actions"&gt;&lt;span&gt;&lt;ShieldCheck size={15}/&gt; Required fields are marked&lt;/span&gt;&lt;button className="primary-btn" type="submit"&gt;Submit request &lt;ArrowUpRight size={15}/&gt;&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;}&lt;/section&gt;&lt;aside className="panel schema-info"&gt;&lt;div className="schema-icon"&gt;&lt;Boxes size={21}/&gt;&lt;/div&gt;&lt;h3&gt;Configuration-driven UI&lt;/h3&gt;&lt;p&gt;This form is rendered by iterating over a typed JSON schema. Add or change a field in the configuration and the UI updates without manually writing new markup.&lt;/p&gt;&lt;div className="schema-stats"&gt;&lt;div&gt;&lt;b&gt;{schema.length}&lt;/b&gt;&lt;span&gt;Schema fields&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;7&lt;/b&gt;&lt;span&gt;Field types supported&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div className="schema-feature"&gt;&lt;CheckCircle2 size={16}/&gt; Reusable field renderer&lt;/div&gt;&lt;div className="schema-feature"&gt;&lt;CheckCircle2 size={16}/&gt; Type-safe field definitions&lt;/div&gt;&lt;div className="schema-feature"&gt;&lt;CheckCircle2 size={16}/&gt; Built-in validation&lt;/div&gt;&lt;/aside&gt;&lt;/div&gt;{showJson&amp;&amp;&lt;section className="panel json-panel"&gt;&lt;div className="panel-head"&gt;&lt;div&gt;&lt;h2&gt;Form schema&lt;/h2&gt;&lt;p&gt;src/data.ts — initialSchema&lt;/p&gt;&lt;/div&gt;&lt;span className="schema-badge"&gt;TypeScript&lt;/span&gt;&lt;/div&gt;&lt;pre&gt;{JSON.stringify(schema,null,2)}&lt;/pre&gt;&lt;/section&gt;}&lt;/&gt;}</span>
+<span class="cstat-no" title="statement not covered" >function ApiConsole({onNotify}:{onNotify:(message:string)=&gt;void}) {</span>
+<span class="cstat-no" title="statement not covered" >  const [email,setEmail]=useState("demo@opspilot.dev");</span>
+<span class="cstat-no" title="statement not covered" >  const [password,setPassword]=useState("OpsPilot!2026");</span>
+<span class="cstat-no" title="statement not covered" >  const [authenticated,setAuthenticated]=useState(()=&gt;Boolean(localStorage.getItem("opspilot-auth-token")));</span>
+<span class="cstat-no" title="statement not covered" >  const [apiTasks,setApiTasks]=useState&lt;Task[]&gt;([]);</span>
+<span class="cstat-no" title="statement not covered" >  const [loading,setLoading]=useState(false);</span>
+<span class="cstat-no" title="statement not covered" >  const [error,setError]=useState("");</span>
+<span class="cstat-no" title="statement not covered" >  const [newTitle,setNewTitle]=useState("");</span>
+<span class="cstat-no" title="statement not covered" >  const loadTasks=async()=&gt;{setLoading(true);setError("");try{const response=await (await import("./api")).api.getTasks();setApiTasks(response.data);}catch(e){setError(e instanceof Error?e.message:"Unable to load tasks");}finally{setLoading(false);}};</span>
+<span class="cstat-no" title="statement not covered" >  useEffect(()=&gt;{if(authenticated) void loadTasks();},[authenticated]);</span>
+<span class="cstat-no" title="statement not covered" >  const login=async(e:FormEvent)=&gt;{e.preventDefault();setLoading(true);setError("");try{await (await import("./api")).api.login(email,password);setAuthenticated(true);onNotify("Signed in to the demo API.");}catch(err){setError(err instanceof Error?err.message:"Sign in failed");}finally{setLoading(false);}};</span>
+<span class="cstat-no" title="statement not covered" >  const create=async(e:FormEvent)=&gt;{e.preventDefault();if(!newTitle.trim())return;setLoading(true);try{const {api}=await import("./api");await api.createTask({title:newTitle,department:"Production",owner:"Fatemeh",due:"Not set",priority:"Medium"});setNewTitle("");await loadTasks();onNotify("Task saved through the API.");}catch(err){setError(err instanceof Error?err.message:"Could not create task");}finally{setLoading(false);}};</span>
+<span class="cstat-no" title="statement not covered" >  const changeStatus=async(id:number,status:Task["status"])=&gt;{try{const {api}=await import("./api");await api.updateTask(id,status);await loadTasks();}catch(err){setError(err instanceof Error?err.message:"Update failed");}};</span>
+<span class="cstat-no" title="statement not covered" >  const logout=async()=&gt;{const {api}=await import("./api");api.logout();setAuthenticated(false);setApiTasks([]);};</span>
+<span class="cstat-no" title="statement not covered" >  return &lt;&gt;&lt;PageHeading eyebrow="DEVELOPER WORKSPACE / REST API" title="API integration" description="A working authentication and task API backed by a local JSON datastore." action={&lt;span className="schema-badge"&gt;&lt;Activity size={14}/&gt; Node.js · HTTP · JWT-style HMAC&lt;/span&gt;}/&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div className="form-layout"&gt;&lt;section className="panel form-preview"&gt;&lt;div className="panel-head"&gt;&lt;div&gt;&lt;h2&gt;{authenticated?"Authenticated API session":"Sign in to the demo API"}&lt;/h2&gt;&lt;p&gt;{authenticated?"Task records are loaded from the Node.js server.":"Use the seeded demo account to test protected endpoints."}&lt;/p&gt;&lt;/div&gt;&lt;span className={`status-pill ${authenticated?"good":"risk"}`}&gt;{authenticated?"Authenticated":"Not signed in"}&lt;/span&gt;&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    {!authenticated?&lt;form className="dynamic-form" onSubmit={login}&gt;&lt;label className="field"&gt;&lt;span&gt;Email&lt;/span&gt;&lt;input type="email" value={email} onChange={e=&gt;setEmail(e.target.value)} required/&gt;&lt;/label&gt;&lt;label className="field"&gt;&lt;span&gt;Password&lt;/span&gt;&lt;input type="password" value={password} onChange={e=&gt;setPassword(e.target.value)} required/&gt;&lt;/label&gt;&lt;div className="form-actions"&gt;&lt;span&gt;Demo credentials are prefilled&lt;/span&gt;&lt;button className="primary-btn" disabled={loading} type="submit"&gt;{loading?"Connecting…":"Authenticate"}&lt;ArrowUpRight size={15}/&gt;&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;:&lt;&gt;&lt;form className="filter-row" onSubmit={create}&gt;&lt;input aria-label="New API task title" placeholder="Create a task through REST API" value={newTitle} onChange={e=&gt;setNewTitle(e.target.value)}/&gt;&lt;button className="primary-btn" disabled={loading||!newTitle.trim()}&gt;&lt;Plus size={15}/&gt; Add task&lt;/button&gt;&lt;button type="button" className="secondary-btn" onClick={loadTasks}&gt;Refresh&lt;/button&gt;&lt;button type="button" className="secondary-btn" onClick={logout}&gt;Sign out&lt;/button&gt;&lt;/form&gt;&lt;div className="api-task-list"&gt;{apiTasks.map(task=&gt;&lt;div className="task-line" key={task.id}&gt;&lt;div className="task-copy"&gt;&lt;b&gt;{task.title}&lt;/b&gt;&lt;small&gt;{task.department} · {task.owner}&lt;/small&gt;&lt;/div&gt;&lt;select aria-label={`Status for ${task.title}`} value={task.status} onChange={e=&gt;changeStatus(task.id,e.target.value as Task["status"])}&gt;&lt;option&gt;In progress&lt;/option&gt;&lt;option&gt;Review&lt;/option&gt;&lt;option&gt;Completed&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;)}{!apiTasks.length&amp;&amp;!loading&amp;&amp;&lt;div className="empty-state"&gt;No API tasks found.&lt;/div&gt;}&lt;/div&gt;&lt;/&gt;}</span>
+<span class="cstat-no" title="statement not covered" >    {loading&amp;&amp;&lt;p className="api-feedback"&gt;Communicating with API…&lt;/p&gt;}{error&amp;&amp;&lt;p className="api-error" role="alert"&gt;{error}. Make sure the API server is running on port 4000.&lt;/p&gt;}&lt;/section&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;aside className="panel schema-info"&gt;&lt;div className="schema-icon"&gt;&lt;ShieldCheck size={21}/&gt;&lt;/div&gt;&lt;h3&gt;Protected REST endpoints&lt;/h3&gt;&lt;p&gt;The API verifies a signed bearer token before allowing access to task data and mutations.&lt;/p&gt;&lt;div className="schema-feature"&gt;&lt;CheckCircle2 size={16}/&gt; POST /api/auth/login&lt;/div&gt;&lt;div className="schema-feature"&gt;&lt;CheckCircle2 size={16}/&gt; GET /api/tasks&lt;/div&gt;&lt;div className="schema-feature"&gt;&lt;CheckCircle2 size={16}/&gt; POST /api/tasks&lt;/div&gt;&lt;div className="schema-feature"&gt;&lt;CheckCircle2 size={16}/&gt; PATCH /api/tasks/:id&lt;/div&gt;&lt;div className="schema-feature"&gt;&lt;CheckCircle2 size={16}/&gt; DELETE /api/tasks/:id&lt;/div&gt;&lt;div className="schema-stats"&gt;&lt;div&gt;&lt;b&gt;8h&lt;/b&gt;&lt;span&gt;Token lifetime&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;0&lt;/b&gt;&lt;span&gt;External API deps&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/aside&gt;&lt;/div&gt;&lt;/&gt;;</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >function TaskModal({onClose,onSave}:{onClose:()=&gt;void;onSave:(task:Omit&lt;Task,"id"&gt;)=&gt;void}) {const [title,setTitle]=useState("");const [department,setDepartment]=useState("Production");const [owner,setOwner]=useState("Fatemeh");const [due,setDue]=useState("Nov 25");const [priority,setPriority]=useState&lt;Task["priority"]&gt;("Medium");return &lt;div className="modal-backdrop" onMouseDown={e=&gt;{if(e.target===e.currentTarget)onClose();}}&gt;&lt;div className="modal"&gt;&lt;div className="modal-head"&gt;&lt;div&gt;&lt;h2&gt;Create a task&lt;/h2&gt;&lt;p&gt;Add a new item to the operations queue.&lt;/p&gt;&lt;/div&gt;&lt;button className="icon-btn" onClick={onClose}&gt;&lt;X/&gt;&lt;/button&gt;&lt;/div&gt;&lt;form onSubmit={e=&gt;{e.preventDefault();onSave({title,department,owner,due,priority,status:"In progress"});}}&gt;&lt;label className="field"&gt;&lt;span&gt;Task title *&lt;/span&gt;&lt;input required value={title} onChange={e=&gt;setTitle(e.target.value)} placeholder="e.g. Review supplier documentation"/&gt;&lt;/label&gt;&lt;div className="modal-two"&gt;&lt;label className="field"&gt;&lt;span&gt;Department&lt;/span&gt;&lt;select value={department} onChange={e=&gt;setDepartment(e.target.value)}&gt;{["Production","Warehouse","Maintenance","Power Operations"].map(x=&gt;&lt;option key={x}&gt;{x}&lt;/option&gt;)}&lt;/select&gt;&lt;/label&gt;&lt;label className="field"&gt;&lt;span&gt;Priority&lt;/span&gt;&lt;select value={priority} onChange={e=&gt;setPriority(e.target.value as Task["priority"])}&gt;&lt;option&gt;High&lt;/option&gt;&lt;option&gt;Medium&lt;/option&gt;&lt;option&gt;Low&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;&lt;/div&gt;&lt;div className="modal-two"&gt;&lt;label className="field"&gt;&lt;span&gt;Owner&lt;/span&gt;&lt;input value={owner} onChange={e=&gt;setOwner(e.target.value)}/&gt;&lt;/label&gt;&lt;label className="field"&gt;&lt;span&gt;Due date&lt;/span&gt;&lt;input value={due} onChange={e=&gt;setDue(e.target.value)}/&gt;&lt;/label&gt;&lt;/div&gt;&lt;div className="modal-actions"&gt;&lt;button type="button" className="secondary-btn" onClick={onClose}&gt;Cancel&lt;/button&gt;&lt;button className="primary-btn" type="submit"&gt;&lt;Plus size={16}/&gt; Create task&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;&lt;/div&gt;&lt;/div&gt;}</span>
+<span class="cstat-no" title="statement not covered" >export default App;</span></pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-11-19T06:33:42.380Z
+            </div>
+        <script src="prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="sorter.js"></script>
+        <script src="block-navigation.js"></script>
+    </body>
+</html>
+    
