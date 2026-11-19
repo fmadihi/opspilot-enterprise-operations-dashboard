@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": "usr_demo",
+      "name": "Demo Admin",
+      "email": "demo@opspilot.dev",
+      "salt": "opspilot-demo-salt",
+      "passwordHash": "ce879a1e602f68156c776a5491ac65a41181cdf57e1ad908af5e62ac054e6abfcf855084db9ea03b4ac52301412f7660e2a5eade2c4cb44eb46c04fae0aaf9f4",
+      "role": "admin"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 101,
+      "title": "Review production quality report",
+      "department": "Production",
+      "owner": "M. Weber",
+      "due": "Today",
+      "status": "In progress",
+      "priority": "High"
+    },
+    {
+      "id": 102,
+      "title": "Validate incoming inventory records",
+      "department": "Warehouse",
+      "owner": "A. Fischer",
+      "due": "Today",
+      "status": "Review",
+      "priority": "Medium"
+    },
+    {
+      "id": 103,
+      "title": "Approve maintenance checklist",
+      "department": "Maintenance",
+      "owner": "L. Schmidt",
+      "due": "Nov 21",
+      "status": "In progress",
+      "priority": "High"
+    }
+  ]
+}
