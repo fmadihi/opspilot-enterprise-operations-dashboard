@@ -1,0 +1,10 @@
+{
+  "name": "OpsPilot Operations Command Center",
+  "short_name": "OpsPilot",
+  "description": "Enterprise operations management demo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101322",
+  "theme_color": "#101322",
+  "icons": []
+}
